@@ -307,3 +307,218 @@ font-weight:bold;
 cursor:pointer;
 
 }
+/* ===========================================
+   HAPPY PAGE
+=========================================== */
+
+#happyPage{
+    overflow:hidden;
+}
+
+.birthdayTitle{
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:20px;
+    color:#ffd54f;
+    text-shadow:0 0 20px rgba(255,213,79,.7);
+    animation:fadeDown 1s ease;
+}
+
+.wish{
+    font-size:18px;
+    line-height:1.8;
+    max-width:650px;
+    margin-bottom:35px;
+    color:#f5f5f5;
+}
+
+/* ===========================================
+   PHOTO SLIDER
+=========================================== */
+
+.slider{
+    position:relative;
+    width:100%;
+    max-width:340px;
+    height:430px;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.5);
+    margin-bottom:30px;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transform:scale(1.08);
+    transition:opacity 1s ease, transform 1s ease;
+}
+
+.slide.active{
+    opacity:1;
+    transform:scale(1);
+}
+
+/* ===========================================
+   MESSAGE BOX
+=========================================== */
+
+.messageBox{
+    max-width:700px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:25px;
+}
+
+.messageBox h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.messageBox p{
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* ===========================================
+   CONFETTI CANVAS
+=========================================== */
+
+#confetti{
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:999;
+}
+
+/* ===========================================
+   ANIMATIONS
+=========================================== */
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.messageBox{
+    animation:fadeUp 1s ease;
+}
+
+/* ===========================================
+   MOBILE RESPONSIVE
+=========================================== */
+
+@media(max-width:768px){
+
+.typing{
+    font-size:34px;
+}
+
+.subtitle{
+    font-size:16px;
+}
+
+#moodPage h2{
+    font-size:30px;
+}
+
+.modeButtons button{
+    width:100%;
+    font-size:24px;
+    padding:24px;
+}
+
+#sadPage h1{
+    font-size:70px;
+}
+
+#sadPage h2{
+    font-size:30px;
+}
+
+#sadPage p{
+    font-size:18px;
+}
+
+.birthdayTitle{
+    font-size:30px;
+}
+
+.wish{
+    font-size:16px;
+}
+
+.slider{
+    width:90%;
+    height:400px;
+}
+
+.messageBox{
+    width:95%;
+    padding:20px;
+}
+
+.messageBox p{
+    font-size:16px;
+}
+
+}
+
+/* ===========================================
+   SMALL PHONES
+=========================================== */
+
+@media(max-width:400px){
+
+.typing{
+    font-size:28px;
+}
+
+#moodPage h2{
+    font-size:26px;
+}
+
+.modeButtons button{
+    font-size:20px;
+    padding:20px;
+}
+
+.slider{
+    height:340px;
+}
+
+.birthdayTitle{
+    font-size:24px;
+}
+
+}
