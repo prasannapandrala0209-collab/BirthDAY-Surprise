@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Birthday Surprise</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Background Animation -->
+<div class="particles"></div>
+
+<!-- =========================
+        WELCOME PAGE
+========================= -->
+
+<section id="welcomePage">
+
+    <h1 class="typing">
+        👋 Welcome Bruhh!
+    </h1>
+
+    <p class="subtitle">
+        I have a small surprise for you... 🎁
+    </p>
+
+    <button id="startBtn">
+        Continue ❤️
+    </button>
+
+</section>
+
+<!-- =========================
+        MOOD PAGE
+========================= -->
+
+<section id="moodPage" class="hidden">
+
+    <h2>
+        🤔 What's Your Mood?
+    </h2>
+
+    <div class="modeButtons">
+
+        <button id="happyBtn" class="happy">
+
+            😊<br>
+            HAPPY MOOD
+
+        </button>
+
+        <button id="sadBtn" class="sad">
+
+            😢<br>
+            SAD MOOD
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+        SAD PAGE
+========================= -->
+
+<section id="sadPage" class="hidden">
+
+    <h1>😂</h1>
+
+    <h2>
+        Em Ledhu Dolla...
+    </h2>
+
+    <p>
+
+        Nuv Happy ga unnapudu...
+
+        <br><br>
+
+        SAD MOOD enduku open chesav? 🤦
+
+        <br><br>
+
+        Happy Mood click cheyy ra 😜❤️
+
+    </p>
+
+    <button id="goHappy">
+
+        HAPPY MOOD ❤️
+
+    </button>
+
+</section>
+
+<!-- =========================
+        HAPPY PAGE
+========================= -->
+
+<section id="happyPage" class="hidden">
+
+    <canvas id="confetti"></canvas>
+
+    <h1 class="birthdayTitle">
+
+        🎂 HAPPY BIRTHDAY BRUHH 🎂
+
+    </h1>
+
+    <p class="wish">
+
+        Wishing you endless happiness,
+        success,
+        laughter,
+        and unforgettable memories. ❤️
+
+    </p>
+
+    <!-- Photo Slider -->
+
+    <div class="slider">
+
+        <img src="images/pic1.jpg" class="slide active">
+
+        <img src="images/pic2.jpg" class="slide">
+
+        <img src="images/pic3.jpg" class="slide">
+
+        <img src="images/pic4.jpg" class="slide">
+
+        <img src="images/pic5.jpg" class="slide">
+
+    </div>
+
+    <div class="messageBox">
+
+        <h2>❤️</h2>
+
+        <p>
+
+            No matter where life takes us...
+
+            <br><br>
+
+            You'll always be my favourite brother.
+
+            <br><br>
+
+            Stay Happy ❤️
+
+            Stay Crazy 😎
+
+            Stay Blessed ✨
+
+        </p>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
