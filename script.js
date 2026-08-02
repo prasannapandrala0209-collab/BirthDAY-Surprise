@@ -207,3 +207,40 @@ typing.style.opacity="1";
 },1000);
 
 console.log("🎂 Birthday Surprise Ready ❤️");
+function startBirthdayBoom(){
+
+document.getElementById("countdown").classList.remove("hidden");
+
+const text=document.getElementById("countText");
+
+const words=[
+"Loading Surprise...",
+"3",
+"2",
+"1",
+"💥 BOOM 💥"
+];
+
+let i=0;
+
+const timer=setInterval(()=>{
+
+i++;
+
+if(i<words.length){
+
+text.innerHTML=words[i];
+
+}else{
+
+clearInterval(timer);
+
+document.getElementById("countdown").style.display="none";
+
+document.getElementById("birthdayReveal").classList.remove("hidden");
+
+}
+
+},1000);
+
+}
