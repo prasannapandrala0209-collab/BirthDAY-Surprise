@@ -240,7 +240,22 @@ document.getElementById("countdown").style.display="none";
 document.getElementById("birthdayReveal").classList.remove("hidden");
 
 }
+const delays = [2000, 800, 800, 800, 500];
 
-},1000);
+let i = 0;
+
+function nextStep() {
+    if (i < words.length) {
+        text.innerHTML = words[i];
+        const delay = delays[i];
+        i++;
+        setTimeout(nextStep, delay);
+    } else {
+        document.getElementById("countdown").style.display = "none";
+        document.getElementById("birthdayReveal").classList.remove("hidden");
+    }
+}
+
+nextStep();
 
 }
