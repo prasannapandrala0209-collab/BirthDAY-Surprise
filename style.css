@@ -14,7 +14,8 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
     background:#000;
     color:#fff;
     min-height:100vh;
@@ -312,7 +313,9 @@ cursor:pointer;
 =========================================== */
 
 #happyPage{
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
+
 }
 
 .birthdayTitle{
