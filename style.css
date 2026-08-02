@@ -1,1 +1,309 @@
+/* ===========================================
+   RESET
+=========================================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    background:#000;
+    color:#fff;
+    min-height:100vh;
+}
+
+/* ===========================================
+   COMMON PAGE
+=========================================== */
+
+section{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+    text-align:center;
+    position:relative;
+}
+
+.hidden{
+    display:none;
+}
+
+/* ===========================================
+   ANIMATED BACKGROUND
+=========================================== */
+
+body{
+    background:linear-gradient(-45deg,#0f172a,#111827,#1e1b4b,#312e81);
+    background-size:400% 400%;
+    animation:bgMove 15s ease infinite;
+}
+
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* ===========================================
+   FLOATING PARTICLES
+=========================================== */
+
+.particles{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-1;
+}
+
+.particles::before{
+
+content:"";
+
+position:absolute;
+
+width:220%;
+
+height:220%;
+
+background-image:
+radial-gradient(white 2px,transparent 2px);
+
+background-size:70px 70px;
+
+opacity:.15;
+
+animation:stars 70s linear infinite;
+
+}
+
+@keyframes stars{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-700px);
+
+}
+
+}
+
+/* ===========================================
+WELCOME PAGE
+=========================================== */
+
+.typing{
+
+font-size:42px;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+animation:fadeDown 1s;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+opacity:.9;
+
+margin-bottom:35px;
+
+max-width:500px;
+
+line-height:1.7;
+
+}
+
+#startBtn{
+
+padding:18px 45px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:20px;
+
+font-weight:700;
+
+cursor:pointer;
+
+background:#ff4081;
+
+color:#fff;
+
+transition:.3s;
+
+box-shadow:0 0 25px rgba(255,64,129,.5);
+
+}
+
+#startBtn:hover{
+
+transform:scale(1.08);
+
+background:#ff2f73;
+
+}
+
+/* ===========================================
+MOOD PAGE
+=========================================== */
+
+#moodPage h2{
+
+font-size:38px;
+
+margin-bottom:50px;
+
+}
+
+.modeButtons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+width:100%;
+
+max-width:400px;
+
+}
+
+.modeButtons button{
+
+padding:28px;
+
+font-size:28px;
+
+font-weight:700;
+
+border:none;
+
+border-radius:25px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.happy{
+
+background:#22c55e;
+
+color:white;
+
+box-shadow:0 0 25px rgba(34,197,94,.5);
+
+}
+
+.happy:hover{
+
+transform:scale(1.05);
+
+}
+
+.sad{
+
+background:#ef4444;
+
+color:white;
+
+box-shadow:0 0 25px rgba(239,68,68,.5);
+
+}
+
+.sad:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ===========================================
+SAD PAGE
+=========================================== */
+
+#sadPage h1{
+
+font-size:90px;
+
+margin-bottom:15px;
+
+}
+
+#sadPage h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+#sadPage p{
+
+font-size:22px;
+
+line-height:1.8;
+
+max-width:500px;
+
+margin-bottom:35px;
+
+}
+
+#goHappy{
+
+padding:18px 40px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:50px;
+
+background:#22c55e;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
