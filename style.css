@@ -525,3 +525,81 @@ cursor:pointer;
 }
 
 }
+.hidden{
+    display:none;
+}
+
+.countdown{
+    position:fixed;
+    inset:0;
+    background:#0b0b1f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#countText{
+    font-size:60px;
+    color:#ffd54f;
+    text-align:center;
+    animation:pulse .8s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.2);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+#birthdayReveal{
+
+text-align:center;
+animation:zoom .8s ease;
+padding:30px;
+
+}
+
+.boomTitle{
+
+font-size:48px;
+color:#ffd54f;
+text-shadow:0 0 20px gold;
+
+}
+
+.boomWish{
+
+font-size:24px;
+line-height:1.8;
+color:white;
+
+}
+
+@keyframes zoom{
+
+from{
+
+transform:scale(.4);
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+opacity:1;
+
+}
+
+}
